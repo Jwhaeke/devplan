@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Development Plan</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="main.js"></script>
+    <script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet"> 
+
+    <script>
+		$(document).ready(function() {
+  	$('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+          $(this).click(function() {
+ $("#nav li a").removeClass("active");
+ $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+	</script>	
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="#top">Home</a>
+            <a href="#plan">The Plan</a>
+            <a href="#plan">Sources</a>
+            <a href="#front">Front End</a>
+            <a href="#bend">Back End</a>
+            <a href="#pdev">Personal Dev.</a>
+            <a href="#skills">Soft Skills</a>
+            <a href="#link">Links</a>
+        </div>
+    </header>
+    <div id="title">
+    <p>Becoming a Web Developer</p>
+        
+    </div>
+    
+    <!-- Front page background video for effect-->
+        <video autoplay muted loop id="bgvideo">
+            <source src="./vids/code.mp4" type="video/mp4">
+          </video>
+      
+<!-- Creating main class with a top margin to avoid overlap of the header nav-->
+    <div class="main">
+        
+        <!-- How do I intend to reach my goal? And what do I need?-->
+    <div class="wrapper">
+        <div class="text">
+    
+            <div id="plan"></div>
+                <div>
+                    <p id="bold">Personal Development Plan</p>
+
+                    <p id="how">
+        
+        At this point it is important to visualize the path to web developer. 
+        To do this some desk research is required. Writing this document will 
+        ensure that new needed skills become evident. 
+          
+                    </p>
+
+                    <ul>
+                    <i><li>What are the job requirements
+                            for a web developer? (check indeed.com) </li>
+                    <li>What do these skills compose of?</li>
+                    <li>Where can I find the resources to learn these skills?</li></i>
+                    </ul>
+                    <p></p>
+                </div>
+    
+            <p>
+                Results of the desk research will be added to the checklist and integrated in the development path.
+            </p>
+    </div>
+
+    <!-- Sources -->
+    <div class="text">
+    <div class="sources">
+        <p id="bold">Educational Sources</p>
+        <ul>
+            <li>https://www.traversymedia.com/</li>
+            <li>https://www.freecodecamp.org/</li>
+            <li>https://laracasts.com/</li>
+
+        </ul>
+        </div>
+    
+    <!-- Ideas -->
+
+    <div>
+
+        <p id="bold">Ideas for project and puzzles</p>
+
+        <ul>
+            <li>Integrate completed sub-task into main progress bar</li>
+            <li>Configurator Web-Developer</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+
+    <!--What skills are required?-->
+    <div id="fend"></div>
+
+    <div id="front"></div>
+    <div id="fill"></div>
+    <div>
+        <div class="front-end">
+           <h1>Front End Development</h1>
+        </div>
+    <div>
+        <span> Progress: <progress id="bar" value="35" max="100"></progress> 
+        </span><br><br><br>
+        <label class="container">
+          <input type="checkbox" >HTML
+        </label><br>
+        <ul></ul>
+
+        <label class="container">
+            <input type="checkbox" >CSS
+        </label>
+        <ul>
+        <li id="sub">Proper use of parent-child heritage</li> 
+        <li id="sub">Blurring of images</li>
+        <li id="sub">Color filter application</li>
+        </ul>
+        <label class="container">
+            <input type="checkbox" >Bootstrap
+        </label><br>
+        <ul>
+            <li id="sub">Learn about Bootstrap and its uses</li>
+        </ul>
+        
+        
+        <label class="container">
+            <input type="checkbox" >Javascript
+        </label><br>
+        <ul>
+            <li id="sub">Learn how the scrolling script works</li>
+            <li id="sub">Links the checkboxes to the progress bar</li>
+            <li id="sub">Or build  a new one</li>
+            <li id="sub">Build a small game</li>
+        </ul>
+        
+
+        <label class="container">
+            <input type="checkbox">Angular
+        </label><br>
+        <ul>
+            <li id="sub">Learn about Angular and its uses</li>
+        </ul>
+        
+
+    </div>
+    <div id="fend"></div>
+    <div id="bend"></div>
+
+    <div id="back">
+        <div class="back-end">
+           <h1>Back End Development</h1>
+        </div>
+    <div>
+        <span> Progress: <progress id="bar" value="5" max="100"></progress> 
+            </span><br> <br><br>   
+        <label class="container">
+            <input type="checkbox" >PHP
+        </label><br>
+
+        <ul>
+            <li id="sub">Setup a server + database</li>
+            <li id="sub">Build a working login form</li>
+            <li id="sub">Build a contact form</li>
+        </ul>
+        
+        <label class="container">
+            <input type="checkbox" >Laravel
+        </label><br>
+
+        <ul>
+            <li id="sub">Learn more about Laravel and its uses and limitations</li>
+            
+        </ul>
+
+        <label class="container">
+            <input type="checkbox" >MySQL
+        </label><br>
+        
+        <ul>
+            <li id="sub">Setup a working database</li>
+            <li id="sub">Fill database from webpage</li>
+            <li id="sub">Pull stuff from database from webpage</li>
+        </ul>
+        
+        <label class="container">
+            <input type="checkbox" >Linux
+        </label><br>
+        
+        
+
+    </div>
+    <div id="fend"></div>
+    <div id="pdev"></div>
+
+    <div id="gen">
+        <div class="dev">
+           <h1>Personal Development</h1>
+        </div>
+    <div>
+        <span> Progress: <progress id="bar" value="5" max="100"></progress> 
+        </span><br> <br><br>
+        <label class="container">
+            <input type="checkbox" >Scrum
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >IDE
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >Version Control
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >Cloud Deployment
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >OWASP Websecurity
+        </label><br> 
+
+        
+        
+            
+    </div>
+    <div id="fend"></div>
+    <div id="skills"></div>
+
+    <div id="soft">
+        <div class="skills">
+           <h1>Soft Skills</h1>
+        </div>
+    <div>
+
+        <span> Progress: <progress id="bar" value="5" max="100"></progress> 
+            </span><br> <br><br>
+        
+        <label class="container">
+            <input type="checkbox" >Self Improvement
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >Communication
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >Problem Solving
+        </label><br> 
+
+        
+
+        <label class="container">
+            <input type="checkbox" >Time Management
+        </label><br> 
+   
+
+    </div>
+    <div id="fend"></div>
+    <div id="link"></div>
+
+    <div id="links">
+        <a href="https://www.traversymedia.com/">Traversy Media</a><br>
+        <a href="https://www.freecodecamp.org/">Free Code Camp</a><br>
+        <a href="https://laracasts.com/">Lara Casts</a><br>
+
+    </div>
+    <!-- What will I need to do in the future to keep my skills up to date -->
+
+    </div>
+    <!-- End of main section-->
+</div>
+</div>
+</div>
+</div>
+
+    <!--Might as well let you know who build this-->
+
+    <div id="jw">This page was built by <a href="mailto:jwhaeke@live.nl">Jan-Willem Haeke</a> </div>
+</body>
+</html>

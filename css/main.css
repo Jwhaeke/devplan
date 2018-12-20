@@ -1,0 +1,168 @@
+
+body {
+margin: 0;
+padding: 0;
+background-color: #FAFAFB;
+}
+
+#title {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    background-color: #242831;
+    opacity: 0.8;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
+    font-size: 35px;
+    color: #72A5C7;
+    z-index: 0.5;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;   
+     
+}
+
+/*  creating a div that will ensure that the nav links load the screen properly
+    Meaning that it is fully readable, and that the nav bar aligns with the content
+    vertically. */
+
+/*  Created new id's for this reason and some old id's may have become redundant. 
+    Still need to look into this */
+
+#plan {
+    height: 113px;
+    margin-top: -113px;
+}
+
+#fend {
+    margin-top: 50%
+}
+
+#fill, #bend, #pdev, #skills, #link{
+    height: 80px;
+}
+
+header {
+    width: 100%;
+    background-color: #242831;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    height: 75px;
+    margin-left: 15%;
+    
+}
+
+.nav a {
+    display: block;
+    font-family: 'Biryani', sans-serif;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 26px 15px;
+    color: #72A5C7;
+}
+
+.nav a:hover {
+    background-color: #9EADB7;
+    color: #242831;
+    }
+
+h1 {
+    color: tomato;
+    font-size: 40px;
+}
+
+.text {
+    font-family: 'Biryani', sans-serif;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #242831;
+    color: #9EADB7;
+    font-size: 18px;
+}
+
+
+#bold {
+    font-family: 'Biryani', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #9EADB7;
+}
+
+#bgvideo {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    margin-left: 10%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 16px;
+}
+
+.container {
+    font-family: 'Biryani', sans-serif;
+    font-size: 20px;
+}
+
+#bar {
+    margin-top: -150px;
+}
+
+
+
+#links {
+    margin-top: 50px;
+    height: 100vh;
+}
+#links a:hover {
+background-color: #AFB79A }
+
+#links a {
+    display: block;
+    width: 400px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: tomato;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border: solid #242831;
+}
+
+#jw {
+    bottom: 50px;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#jw a {
+    text-decoration: none;
+    color: tomato;
+    border: solid black 1px;
+    padding: 5px;
+}
+
+#jw a:hover {
+    color: black;
+    border: solid black 1px;
+    background-color: tomato;
+}
+
+
